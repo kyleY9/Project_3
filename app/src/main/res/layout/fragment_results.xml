@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultsFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <TextView
+        android:id="@+id/resultsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Your WPM is:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+    <TextView
+        android:id="@+id/finalWPMTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/resultsTextView"
+        app:layout_constraintStart_toStartOf="@+id/resultsTextView"
+        app:layout_constraintTop_toBottomOf="@+id/resultsTextView" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/finalWPMTextView"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="@+id/finalWPMTextView"
+        app:layout_constraintTop_toBottomOf="@+id/finalWPMTextView"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/ratingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Your Typing Speed is "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/ratingTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ratingTextView"
+        app:layout_constraintStart_toEndOf="@+id/ratingTextView"
+        app:layout_constraintTop_toTopOf="@+id/ratingTextView" />
+
+    <TextView
+        android:id="@+id/resultsTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Highest WPM Recorded:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/ratingTextView" />
+
+    <TextView
+        android:id="@+id/highestWPMTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@+id/resultsTextView2"
+        app:layout_constraintStart_toStartOf="@+id/resultsTextView2"
+        app:layout_constraintTop_toBottomOf="@+id/resultsTextView2" />
+
+    <Button
+        android:id="@+id/returnToStartButton"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="48dp"
+        android:text="Play again!!!"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/highestWPMTextView"
+        app:layout_constraintStart_toStartOf="@+id/highestWPMTextView"
+        app:layout_constraintTop_toBottomOf="@+id/highestWPMTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

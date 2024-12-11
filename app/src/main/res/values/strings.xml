@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Project_3</string>
+    <string name="welcome_to_android_typing_test">Welcome to Android Typing Test!!!</string>
+    <string name="start_typing_here">Start Typing Here!</string>
+</resources>
